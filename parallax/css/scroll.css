@@ -14,7 +14,7 @@ dl, ul, ol, menu, li {
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: url(images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-size: cover;
 }
 
