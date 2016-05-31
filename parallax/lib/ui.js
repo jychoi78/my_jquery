@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
   var h = $('body').height();
 
   $('.cover-area').css('height',h);
@@ -9,6 +9,19 @@ $(function(){
     $('.container').css('margin-top',-scrollh);
     $('.cover-area').css('margin-top',-(scrollh/2));
     $('.contents').css('margin-top',h);
-    console.log('text');
+  });
+})*/
+
+$(function(){
+  var h = $('body').height();
+
+  $('.cover-area').css('height',h);
+
+  $(window).scroll(function(){
+    var scrollh = $(window).scrollTop();
+    if (scrollh <= h) {
+      $('.contents').css('margin-top',-scrollh);
+      $('.cover-area').css('margin-top',-(scrollh/2));
+    }
   });
 })
